@@ -14,12 +14,6 @@ import '../App.css'
 const Footer = () => {
   return (
     <Box className="footerbg"
-      sx={{
-       
-        padding: "50px 20px",
-        color: "#111633",
-        fontFamily: "'Arial', sans-serif",
-      }}
     >
       <Box
         sx={{
