@@ -9,15 +9,13 @@ import backgroundImage from "../assets/footer.png"; // Footer background
 import footerImage1 from "../assets/footerimage1.png"; // First news image
 import footerImage2 from "../assets/footerimage2.png"; // Second news image
 import logo from "../assets/logo.png";
+import '../App.css'
 
 const Footer = () => {
   return (
-    <Box
+    <Box className="footerbg"
       sx={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+       
         padding: "50px 20px",
         color: "#111633",
         fontFamily: "'Arial', sans-serif",

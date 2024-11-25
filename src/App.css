@@ -53,3 +53,11 @@
   }
 }
 
+
+
+.footerbg{
+  background-image: url('./assets//footer.png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
