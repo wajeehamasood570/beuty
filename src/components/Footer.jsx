@@ -8,37 +8,45 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import backgroundImage from "../assets/footer.png"; // Footer background
 import footerImage1 from "../assets/footerimage1.png"; // First news image
 import footerImage2 from "../assets/footerimage2.png"; // Second news image
+import facebook from '../assets/facebook.png'
+import whatsapp from '../assets/whatsapp.png'
+import instagram from '../assets/instagram.png'
+import pinterest from '../assets/pinterest.png'
 import logo from "../assets/logo.png";
-import '../App.css'
+import "../App.css";
 
 const Footer = () => {
   return (
-    <Box className="footerbg"
-    >
+    <Box className="footerbg">
       <Box
         sx={{
           padding: "10px ",
           display: "flex",
+          flexDirection:{xs:"column", md:"row"},
           justifyContent: "space-between",
         }}
       >
-        <img src={logo} style={{ width: "auto", height: "26px" }} />
+        <img src={logo} style={{ width: "auto", height: {xs:"auto", md:"26px"}}} />
 
         {/* Top Row: Social Media Icons */}
         <Box
           sx={{
             display: "flex",
-            justifyContent: "flex-end",
-            gap: "15px",
+            justifyContent: "space-between",
+            gap: "10px",
             marginBottom: "30px",
           }}
         >
           <Typography
-            style={{ color: "#111633", fontSize: "24px", fontWeight: "600" }}
+            style={{ color: "#111633", fontSize: "24px", fontWeight: "600" , fontFamily:"Inter"}}
           >
             Follow Us
           </Typography>
-          <FacebookIcon
+          <img src={facebook} />
+          <img src={pinterest} />
+          <img src={whatsapp} />
+          <img src={instagram} />
+          {/* <FacebookIcon
             sx={{
               fontSize: "24px",
               color: "#111633",
@@ -61,7 +69,8 @@ const Footer = () => {
               cursor: "pointer",
               "&:hover": { color: "#e4405f" },
             }}
-          />
+          /> */
+          }
         </Box>
       </Box>
 
@@ -71,7 +80,14 @@ const Footer = () => {
         <Grid item xs={12} md={3}>
           <Typography
             variant="subtitle1"
-            sx={{ fontWeight: "bold", marginBottom: "16px", fontSize: "36px", lineHeight:"43px", fontWeight:"700"  }}
+            sx={{
+              fontWeight: "bold",
+              marginBottom: "16px",
+              fontSize: "36px",
+              lineHeight: "43px",
+              fontWeight: "700",
+              fontFamily:"Inter"
+            }}
           >
             Explore
           </Typography>
@@ -79,7 +95,14 @@ const Footer = () => {
             href="#"
             color="#3F3F3F"
             underline="none"
-            sx={{ display: "block", margin: "8px 0", fontSize: "24px", lineHeight:"36px", fontWeight:"600" }}
+            sx={{
+              display: "block",
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              fontFamily:"Poppins"
+            }}
           >
             Home
           </Link>
@@ -87,7 +110,14 @@ const Footer = () => {
             href="#"
             color="#3F3F3F"
             underline="none"
-            sx={{ display: "block", margin: "8px 0", fontSize: "24px", lineHeight:"36px", fontWeight:"600" }}
+            sx={{
+              display: "block",
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              fontFamily:"Poppins"
+            }}
           >
             Blog
           </Link>
@@ -95,7 +125,14 @@ const Footer = () => {
             href="#"
             color="#3F3F3F"
             underline="none"
-            sx={{ display: "block", margin: "8px 0", fontSize: "24px", lineHeight:"36px", fontWeight:"600" }}
+            sx={{
+              display: "block",
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              fontFamily:"Poppins"
+            }}
           >
             Contact us
           </Link>
@@ -103,7 +140,14 @@ const Footer = () => {
             href="#"
             color="#3F3F3F"
             underline="none"
-            sx={{ display: "block", margin: "8px 0", fontSize: "24px", lineHeight:"36px", fontWeight:"600" }}
+            sx={{
+              display: "block",
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              fontFamily:"Poppins"
+            }}
           >
             Services
           </Link>
@@ -113,27 +157,64 @@ const Footer = () => {
         <Grid item xs={12} md={4}>
           <Typography
             variant="subtitle1"
-            sx={{ fontWeight: "bold", marginBottom: "16px" , fontSize: "36px", lineHeight:"43px", fontWeight:"700" }}
+            sx={{
+              fontWeight: "bold",
+              marginBottom: "16px",
+              fontSize: "36px",
+              lineHeight: "43px",
+              fontWeight: "700",
+              fontFamily:"Inter"
+            }}
           >
             About Us
           </Typography>
           <Typography
-            variant="body2"
-            sx={{ margin: "8px 0", fontSize: "24px", lineHeight:"36px", fontWeight:"600", lineHeight: "1.8", color:"#3F3F3F" }}
+            sx={{
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              color: "#3F3F3F",
+              fontFamily:"Poppins"
+            }}
           >
             (456) 789-12301
           </Typography>
           <Typography
-            variant="body2"
-            sx={{ margin: "8px 0", fontSize: "24px", lineHeight:"36px", fontWeight:"600", lineHeight: "1.8", color:"#3F3F3F"  }}
+            sx={{
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              color: "#3F3F3F",
+              fontFamily:"Poppins"
+            }}
           >
             info@modrino.co.uk
           </Typography>
           <Typography
-            variant="body2"
-            sx={{ margin: "8px 0", fontSize: "24px", lineHeight:"36px", fontWeight:"600", lineHeight: "1.8", color:"#3F3F3F"  }}
+            sx={{
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              color: "#3F3F3F",
+              fontFamily:"Poppins"
+            }}
           >
-            South 13th Street, New York, America
+            South 13th Street,
+          </Typography>
+          <Typography
+            sx={{
+              margin: "8px 0",
+              fontSize: "24px",
+              lineHeight: "36px",
+              fontWeight: "500",
+              color: "#3F3F3F",
+              fontFamily:"Poppins"
+            }}
+          >
+           New York, America
           </Typography>
         </Grid>
 
@@ -141,7 +222,14 @@ const Footer = () => {
         <Grid item xs={12} md={4}>
           <Typography
             variant="subtitle1"
-            sx={{ fontWeight: "bold", marginBottom: "16px", fontSize: "36px", lineHeight:"43px", fontWeight:"700" }}
+            sx={{
+              fontWeight: "bold",
+              marginBottom: "16px",
+              fontSize: "36px",
+              lineHeight: "43px",
+              fontWeight: "700",
+              fontFamily:"Inter"
+            }}
           >
             Recent News
           </Typography>
@@ -165,14 +253,20 @@ const Footer = () => {
             />
             <Box>
               <Typography
-                variant="body2"
-                sx={{ fontSize: "12px", color: "#111633" }}
+
+                sx={{ fontSize: "18px", color: "#111633", fontWeight: "400", fontFamily:"Poppins" }}
               >
                 June 14, 2024
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ fontWeight: "bold", fontSize: "24px", lineHeight:"36px", fontWeight:"600" }}
+
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: "24px",
+                  lineHeight: "36px",
+                  fontWeight: "500",
+                  fontFamily:"Poppins"
+                }}
               >
                 Anti-Aging Cream
               </Typography>
@@ -198,14 +292,20 @@ const Footer = () => {
             />
             <Box>
               <Typography
-                variant="body2"
-                sx={{ fontSize: "12px", color: "#111633" }}
+
+                sx={{ fontSize: "18px", color: "#111633", fontWeight: "400",fontFamily:"Poppins" }}
               >
                 June 14, 2024
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ fontWeight: "bold", fontSize: "24px", lineHeight:"36px", fontWeight:"600" }}
+
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: "24px",
+                  lineHeight: "36px",
+                  fontWeight: "500",
+                  fontFamily:"Poppins"
+                }}
               >
                 Night Cream
               </Typography>
@@ -217,7 +317,6 @@ const Footer = () => {
       {/* Bottom Footer Section */}
       <Box
         sx={{
-          borderTop: "1px solid rgba(255, 255, 255, 0.2)",
           marginTop: "40px",
           paddingTop: "20px",
           display: "flex",
@@ -228,12 +327,14 @@ const Footer = () => {
       >
         {/* Copyright Text */}
         <Typography
-          variant="body2"
           sx={{
-            color: "#111633",
-            fontSize: "24px", lineHeight:"36px", fontWeight:"600",
+            color: "#737373",
+            fontSize: "24px",
+            lineHeight: "36px",
+            fontWeight: "600",
             textAlign: "center",
             flex: "1",
+            fontFamily:"Inter"
           }}
         >
           © 2024 Bake House. All rights reserved.
