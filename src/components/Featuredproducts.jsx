@@ -56,7 +56,8 @@ const products = [
 
 const FeaturedProducts = () => {
   return (
-    <Box className="featuredproducts" sx={{ px: 2, py: 4 }}>
+    <Box className="featuredproducts">
+    <Box sx={{ px: 2, py: 4 }}>
       <Typography
         variant="h4"
         sx={{ mb: 4, fontWeight: "500", textAlign: "center" , fontSize:"64px"}}
@@ -102,6 +103,7 @@ const FeaturedProducts = () => {
           </Grid>
         ))}
       </Grid>
+    </Box>
     </Box>
   );
 };

@@ -9,6 +9,7 @@ import DynamicSection from './components/DynamicSection';
 import agingcream from './assets/agingcream.png'
 import beautycream from './assets/beautycream.png'
 import AboutUs from './components/AboutUs';
+import PremiumProductsSection from './components/PremiuimProductSection';
 
 function App() {
   return (
@@ -22,15 +23,26 @@ function App() {
         content={{
           type: "text",
           title: "Enhance Your Natural Radiance",
-          description:
-            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less",
+          description: (
+            <>
+              <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              </p>
+              <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of 
+              </p>
+              
+            </>
+          ),
         }} />
-      <AboutUs />
-      <DynamicSection image={beautycream}
+        <PremiumProductsSection/>
+        <DynamicSection image={beautycream}
         contentSide="left" // Can be "left" or "right"
         content={{
           type: "form",
         }} />
+      <AboutUs />
+      
       <Footer />
     </>
   );

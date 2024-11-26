@@ -1,66 +1,125 @@
-.headerbg{
- 
-    background-image: url('./assets/bg.png') !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-    width: 100% !important;
-    min-height: 872px !important;
-    position: relative !important;
-  
+/* .headerbg */
+.headerbg {
+  background-image: url('./assets/bg.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100% !important;
+  height: 872px !important;
+  position: relative !important;
 }
 
+@media (max-width: 1024px) {
+  .headerbg {
+    height: 600px !important; /* Adjust height for laptops and tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .headerbg {
+    height: 400px !important; /* Adjust height for smaller screens */
+  }
+}
+
+/* .featuredproducts */
 .featuredproducts{
   background-image: url('./assets/leaves.png') !important;
   background-repeat: no-repeat !important;
  
 }
 
-.offerbg{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 711px; /* Adjust height as needed */
-    background-image: url('./assets/SpecialOffer.png') !important;
-    background-size: cover; /* Ensure the image covers the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repetition */
-    padding: 0 5%; /* Add padding for text spacing */
-    color: #fff; /* White text color */
-  
+/* .offerbg */
+.offerbg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 711px; /* Adjust height as needed */
+  background-image: url('./assets/SpecialOffer.png') !important;
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repetition */
+  padding: 0 5%; /* Add padding for text spacing */
+  color: #fff; /* White text color */
 }
 
+@media (max-width: 1024px) {
+  .offerbg {
+    height: 450px; /* Reduce height for tablets */
+  }
+}
 
-/* style.css */
+@media (max-width: 768px) {
+  .offerbg {
+    height: 400px; /* Reduce height for smaller screens */
+    padding: 0 20px; /* Adjust padding for mobile */
+  }
+}
+
+/* .about-section */
 .about-section {
-  background-image: url('./assets//aboutbg.png') !important; /* Replace with the correct path */
+  background-image: url('./assets/aboutbg.png') !important; /* Replace with the correct path */
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px; /* Adjust for your design */
+  height: 656px;
   color: white;
   text-align: center;
   padding: 20px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
   .about-section {
-    padding: 60px; /* Adjust padding for larger screens */
+    padding: 60px; 
   }
 }
 
+@media (max-width: 768px) {
+  .about-section {
+    height: 500px; /* Adjust for mobile */
+    /* padding: 20px 10px; Adjust padding for mobile */
+  }
+}
 
-
-.footerbg{
-  background-image: url('./assets//footer.png') !important;
+/* .footerbg */
+.footerbg {
+  background-image: url('./assets/footer.png') !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px 20px;
-        color: #111633;
-        font-family: "'Arial', sans-serif",
+  color: #111633;
+  font-family: "'Arial', sans-serif";
 }
+
+@media (max-width: 768px) {
+  .footerbg {
+    padding: 30px 10px; /* Adjust padding for mobile */
+  }
+}
+
+/* .premiumbg */
+.premiumbg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('./assets/premiumbg.png') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 728px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .premiumbg {
+    height: 500px; /* Adjust height for tablets and smaller screens */
+  }
+}
+
+

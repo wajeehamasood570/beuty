@@ -15,7 +15,7 @@ const HeroSection = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          height: "calc(100vh - 64px)", // Subtract AppBar height for proper layout
+          // height: "calc(100vh - 64px)", // Subtract AppBar height for proper layout
           padding: "20px",
           color: "#fff",
         }}
@@ -26,7 +26,7 @@ const HeroSection = () => {
             display: "flex", // Enables flex layout
             alignItems: "center", // Vertically centers the content
             justifyContent: "flex-start", // Aligns content to the left
-            height: "100vh", // Full height for the Hero section
+            // height: "100vh", // Full height for the Hero section
             padding: "20px",
             color: "#fff",
           }}
@@ -41,7 +41,7 @@ const HeroSection = () => {
             <Typography
               sx={{
                 fontWeight: "700",
-                fontSize: {xs:"50px", md:"96px"},
+                fontSize: {xs:"30px",md:"50px", lg:"96px"},
                 color: "#111633",
               }}
             >

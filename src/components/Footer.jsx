@@ -8,10 +8,10 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import backgroundImage from "../assets/footer.png"; // Footer background
 import footerImage1 from "../assets/footerimage1.png"; // First news image
 import footerImage2 from "../assets/footerimage2.png"; // Second news image
-import facebook from '../assets/facebook.png'
-import whatsapp from '../assets/whatsapp.png'
-import instagram from '../assets/instagram.png'
-import pinterest from '../assets/pinterest.png'
+import facebook from "../assets/facebook.png";
+import whatsapp from "../assets/whatsapp.png";
+import instagram from "../assets/instagram.png";
+import pinterest from "../assets/pinterest.png";
 import logo from "../assets/logo.png";
 import "../App.css";
 
@@ -22,11 +22,17 @@ const Footer = () => {
         sx={{
           padding: "10px ",
           display: "flex",
-          flexDirection:{xs:"column", md:"row"},
+          flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
         }}
       >
-        <img src={logo} style={{ width: "auto", height: {xs:"auto", md:"26px"}}} />
+        <img
+          src={logo}
+          style={{ 
+            width: "auto", 
+            height: { xs: "auto", md: "26px" }
+         }}
+        />
 
         {/* Top Row: Social Media Icons */}
         <Box
@@ -38,7 +44,12 @@ const Footer = () => {
           }}
         >
           <Typography
-            style={{ color: "#111633", fontSize: "24px", fontWeight: "600" , fontFamily:"Inter"}}
+            style={{
+              color: "#111633",
+              fontSize: "24px",
+              fontWeight: "600",
+              fontFamily: "Inter",
+            }}
           >
             Follow Us
           </Typography>
@@ -69,8 +80,7 @@ const Footer = () => {
               cursor: "pointer",
               "&:hover": { color: "#e4405f" },
             }}
-          /> */
-          }
+          /> */}
         </Box>
       </Box>
 
@@ -81,12 +91,11 @@ const Footer = () => {
           <Typography
             variant="subtitle1"
             sx={{
-              fontWeight: "bold",
               marginBottom: "16px",
               fontSize: "36px",
               lineHeight: "43px",
               fontWeight: "700",
-              fontFamily:"Inter"
+              fontFamily: "Inter",
             }}
           >
             Explore
@@ -101,7 +110,7 @@ const Footer = () => {
               fontSize: "24px",
               lineHeight: "36px",
               fontWeight: "500",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
             Home
@@ -116,7 +125,7 @@ const Footer = () => {
               fontSize: "24px",
               lineHeight: "36px",
               fontWeight: "500",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
             Blog
@@ -131,7 +140,7 @@ const Footer = () => {
               fontSize: "24px",
               lineHeight: "36px",
               fontWeight: "500",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
             Contact us
@@ -146,7 +155,7 @@ const Footer = () => {
               fontSize: "24px",
               lineHeight: "36px",
               fontWeight: "500",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
             Services
@@ -158,12 +167,11 @@ const Footer = () => {
           <Typography
             variant="subtitle1"
             sx={{
-              fontWeight: "bold",
               marginBottom: "16px",
               fontSize: "36px",
               lineHeight: "43px",
               fontWeight: "700",
-              fontFamily:"Inter"
+              fontFamily: "Inter",
             }}
           >
             About Us
@@ -175,7 +183,7 @@ const Footer = () => {
               lineHeight: "36px",
               fontWeight: "500",
               color: "#3F3F3F",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
             (456) 789-12301
@@ -187,7 +195,7 @@ const Footer = () => {
               lineHeight: "36px",
               fontWeight: "500",
               color: "#3F3F3F",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
             info@modrino.co.uk
@@ -199,7 +207,7 @@ const Footer = () => {
               lineHeight: "36px",
               fontWeight: "500",
               color: "#3F3F3F",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
             South 13th Street,
@@ -211,10 +219,10 @@ const Footer = () => {
               lineHeight: "36px",
               fontWeight: "500",
               color: "#3F3F3F",
-              fontFamily:"Poppins"
+              fontFamily: "Poppins",
             }}
           >
-           New York, America
+            New York, America
           </Typography>
         </Grid>
 
@@ -223,12 +231,11 @@ const Footer = () => {
           <Typography
             variant="subtitle1"
             sx={{
-              fontWeight: "bold",
               marginBottom: "16px",
               fontSize: "36px",
               lineHeight: "43px",
               fontWeight: "700",
-              fontFamily:"Inter"
+              fontFamily: "Inter",
             }}
           >
             Recent News
@@ -253,19 +260,22 @@ const Footer = () => {
             />
             <Box>
               <Typography
-
-                sx={{ fontSize: "18px", color: "#111633", fontWeight: "400", fontFamily:"Poppins" }}
+                sx={{
+                  fontSize: "18px",
+                  color: "#111633",
+                  fontWeight: "400",
+                  fontFamily: "Poppins",
+                }}
               >
                 June 14, 2024
               </Typography>
               <Typography
-
                 sx={{
-                  fontWeight: "bold",
+
                   fontSize: "24px",
                   lineHeight: "36px",
                   fontWeight: "500",
-                  fontFamily:"Poppins"
+                  fontFamily: "Poppins",
                 }}
               >
                 Anti-Aging Cream
@@ -292,19 +302,22 @@ const Footer = () => {
             />
             <Box>
               <Typography
-
-                sx={{ fontSize: "18px", color: "#111633", fontWeight: "400",fontFamily:"Poppins" }}
+                sx={{
+                  fontSize: "18px",
+                  color: "#111633",
+                  fontWeight: "400",
+                  fontFamily: "Poppins",
+                }}
               >
                 June 14, 2024
               </Typography>
               <Typography
-
                 sx={{
-                  fontWeight: "bold",
+
                   fontSize: "24px",
                   lineHeight: "36px",
                   fontWeight: "500",
-                  fontFamily:"Poppins"
+                  fontFamily: "Poppins",
                 }}
               >
                 Night Cream
@@ -334,7 +347,7 @@ const Footer = () => {
             fontWeight: "600",
             textAlign: "center",
             flex: "1",
-            fontFamily:"Inter"
+            fontFamily: "Inter",
           }}
         >
           © 2024 Bake House. All rights reserved.
